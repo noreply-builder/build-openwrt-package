@@ -7,5 +7,6 @@
 
 cd $HOME/openwrt
 make package/shadowvpn/compile V=99
+make package/shadowsocks-libev/compile V=99
 ls -lR bin
 cd
