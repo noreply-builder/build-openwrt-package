@@ -5,6 +5,7 @@ addons:
     - subversion
     - build-essential
     - libncurses5-dev
+    - libpolarssl-dev
     - zlib1g-dev
     - gawk
     - git
