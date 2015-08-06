@@ -21,13 +21,9 @@ cache:
 before_install:
     - rm -rf $HOME/openwrt
     - bash get-toolchain.sh
-    - cp build-package.sh $HOME/openwrt
-    - cp install-package.sh $HOME/openwrt
 
 install: 
-    - cd $HOME/openwrt
-    - bash $HOME/install-package.sh
-    - make defconfig
+    - bash install-package.sh
 
 script:
-    - bash $HOME/build-package.sh 
+    - bash build-package.sh 
