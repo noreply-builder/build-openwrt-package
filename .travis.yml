@@ -1,0 +1,29 @@
+language: c
+
+addons:
+  apt:
+    packages:
+    - subversion 
+    - build-essential 
+    - libncurses5-dev 
+    - zlib1g-dev 
+    - gawk 
+    - git 
+    - ccache 
+    - gettext 
+    - libssl-dev 
+    - xsltproc
+
+before_install:
+    - rm -rf $HOME/openwrt
+    - bash get-toolchain.sh
+    - cp build-package.sh $HOME/openwrt
+    - cp install-package.sh $HOME/openwrt
+
+install: 
+    - cd $HOME/openwrt
+    - bash $HOME/install-package.sh
+    - make defconfig
+
+script:
+    - bash $HOME/build-package.sh 
