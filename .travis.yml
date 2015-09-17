@@ -27,11 +27,11 @@ deploy:
   provider: releases
   api-key: $GITHUB_TOKEN
   file:
-    - "$HOME/openwrt/bin/ramips/packages/base/ShadowVPN_0.1.6-1_ramips_24kec.ipk"
-    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev-spec_2.2.3-1_ramips_24kec.ipk"
-    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev_2.2.3-1_ramips_24kec.ipk"
-    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev-spec-polarssl_2.2.3-1_ramips_24kec.ipk"
-    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev-polarssl_2.2.3-1_ramips_24kec.ipk"
+    - "$HOME/openwrt/bin/ramips/packages/base/ShadowVPN_0.2.0-1_ramips_24kec.ipk"
+    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev-spec_2.3.2-1_ramips_24kec.ipk"
+    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev_2.3.2-1_ramips_24kec.ipk"
+    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev-spec-polarssl_2.3.2-1_ramips_24kec.ipk"
+    - "$HOME/openwrt/bin/ramips/packages/base/shadowsocks-libev-polarssl_2.3.2-1_ramips_24kec.ipk"
   skip_cleanup: true
   on:
     tags: true
